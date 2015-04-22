@@ -5,12 +5,21 @@ packaging files
 ## Installation
 
 ```console
-$ cd `git --exec-path` && curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
+$ git clone http://github.com/tsukurite/git-package.git
+$ ln -s `pwd`/git-package/git-package `git --exec-path`
+```
+
+or
+
+```console
+$ cd `git --exec-path`
+$ curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
+$ chmod 0755 git-package
 ```
 
 ## Usage
 
-all my commit:
+all sasaplus1's commit:
 
 ```console
 $ git package --author=sasaplus1
@@ -19,7 +28,7 @@ $ git package --author=sasaplus1
 today's my commit:
 
 ```console
-$ git package --since=midnight --author=sasaplus1
+$ git package --since=midnight --author=`git config --get user.name`
 ```
 
 latest 5 commits:
