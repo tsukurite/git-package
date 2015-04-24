@@ -14,7 +14,7 @@ or
 ```console
 $ cd `git --exec-path`
 $ curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
-$ chmod 0755 git-package
+$ chmod +x git-package
 ```
 
 ## Usage
