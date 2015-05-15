@@ -31,6 +31,12 @@ today's my commit:
 $ git package --since=midnight --author=`git config --get user.name`
 ```
 
+since 2015-03-03:
+
+```console
+$ git package --date=local --since="2015-03-03"
+```
+
 latest 5 commits:
 
 ```console
