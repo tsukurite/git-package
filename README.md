@@ -1,6 +1,6 @@
 # git-package
 
-packaging files
+packaging to changed files
 
 ## Installation
 
