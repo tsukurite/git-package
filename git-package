@@ -27,7 +27,7 @@
 
 set -u
 
-main() {
+__git_package_main() {
   # for loop variable
   local target=
 
@@ -54,4 +54,4 @@ main() {
   echo "packaged to $destination"
 }
 
-main $@
+__git_package_main $@
