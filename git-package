@@ -28,6 +28,13 @@
 set -u
 
 __git_package_main() {
+  git rev-parse >/dev/null 2>&1
+  if [ "$?" -ne 0 ]
+  then
+    echo 'git-pakcage must execute inside git repository.' 1>&2
+    exit 1
+  fi
+
   # for loop variable
   local target=
 
