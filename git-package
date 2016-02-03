@@ -48,8 +48,14 @@ __git_package_main() {
   # destination directory
   local destination=$(mktemp -d XXXXXXXX)
 
-  for target in $(git log --name-only --pretty=format: $@ | sort -u | sed -e '1d')
+  for target in $(git log --name-only --pretty=format: $@ | sort -u)
   do
+    # continue if file is not exists
+    if [ ! -e "$root/$target" ]
+    then
+      continue
+    fi
+
     dir=$(dirname "$target")
     file=$(basename "$target")
 
