@@ -59,9 +59,9 @@ __git_package_main() {
     dir=$(dirname "$target")
     file=$(basename "$target")
 
-    # copy, it equals to `cp -p --parents`
+    # copy, it equals to `cp -a --parents`
     mkdir -p "$destination/$dir"
-    cp -p "$root/$target" "$destination/$dir/$file"
+    cp -a "$root/$target" "$destination/$dir/$file"
   done
 
   echo "packaged to $destination"
