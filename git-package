@@ -67,4 +67,4 @@ __git_package_main() {
   echo "packaged to $destination"
 }
 
-__git_package_main $@
+__git_package_main "$@"
