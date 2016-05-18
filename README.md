@@ -43,7 +43,7 @@ latest 5 commits:
 $ git package HEAD~5..HEAD
 ```
 
-all arguments pass to `git log`.
+all arguments pass to `git log`. if you want to know other options, execute `git log --help`.
 
 ## License
 
