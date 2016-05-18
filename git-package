@@ -50,7 +50,7 @@ __git_package_main() {
 
   for target in $(git log --name-only --pretty=format: $@ | sort -u)
   do
-    # continue if file is not exists
+    # continue if target file is not exists
     if [ ! -e "$root/$target" ]
     then
       continue
