@@ -5,16 +5,16 @@ packaging to changed files
 ## Installation
 
 ```console
-$ git clone http://github.com/tsukurite/git-package.git
-$ ln -s "`pwd`"/git-package/git-package "`git --exec-path`"
+$ cd "`git --exec-path`"
+$ curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
+$ chmod +x git-package
 ```
 
 or
 
 ```console
-$ cd "`git --exec-path`"
-$ curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
-$ chmod +x git-package
+$ git clone http://github.com/tsukurite/git-package.git
+$ ln -s "`pwd`"/git-package/git-package "`git --exec-path`"
 ```
 
 ## Usage
