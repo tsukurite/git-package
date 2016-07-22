@@ -6,8 +6,8 @@ packaging to changed files
 
 ```console
 $ cd "`git --exec-path`"
-$ curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
-$ chmod +x git-package
+$ [sudo] curl -OL https://raw.githubusercontent.com/tsukurite/git-package/master/git-package
+$ [sudo] chmod +x git-package
 ```
 
 or
