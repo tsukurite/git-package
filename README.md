@@ -1,6 +1,6 @@
 # git-package
 
-package to changed files
+copy only changed files
 
 ## Installation
 
@@ -14,7 +14,7 @@ or
 
 ```console
 $ git clone http://github.com/tsukurite/git-package.git
-$ ln -s "`pwd`"/git-package/git-package "`git --exec-path`"
+$ [sudo] ln -s "`pwd`"/git-package/git-package "`git --exec-path`"
 ```
 
 ## Usage
